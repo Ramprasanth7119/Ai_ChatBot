@@ -4,7 +4,7 @@ const sendMessageButton = document.getElementById('send-message');
 const fileInput = document.getElementById('file-input');
 const fileUploadWrapper = document.querySelector(".file-upload-wrapper");
 const fileCancelButton = document.querySelector("#file-cancel");
-import CONFIG from "./config.js";
+// import CONFIG from "./config.js";
 
 const userData = {
     message : null,
@@ -16,7 +16,7 @@ const userData = {
 
 
 
-const API_KEY = CONFIG.API_KEY || process.env.API_KEY; // Remove the CONFIG.API_KEY and replace your API-KEY for Development Pupposes.
+const API_KEY = process.env.API_KEY; // Remove the CONFIG.API_KEY and replace your API-KEY for Development Pupposes.
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`
 
 const createMessageElement = (content , ...classes) =>{
