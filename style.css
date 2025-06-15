@@ -321,3 +321,12 @@ em-emoji-picker{
 body.show-emoji-picker em-emoji-picker{
     visibility: visible;
 }
+
+.material-symbols-rounded,
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,   /* 1 = filled, 0 = outlined */
+    'wght' 400, /* 100‑700 */
+    'GRAD' 0,   /* -50‑200 */
+    'opsz' 48;  /* optical‑size 20‑48 */
+}
